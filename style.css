@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #BFD7E4;
+  font-family: 'Poppins', sans-serif;
+}
+
+header h1, fieldset .main-legend, fieldset legend, button {
+  font-family: 'Staatliches', cursive;
+  font-weight: normal;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: #293241  ;
+}
+
+.page {
+  margin: auto;
+  width: 750px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 107px;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 36px;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+form {
+  background: linear-gradient(to bottom, #F67669 133px, #ffffff 133px);
+  border-radius: 20px 20px 20px 20px;
+  min-height: 300px;
+  padding: 0 64px 64px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 330px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset .main-legend {
+  margin-bottom: 32px;
+  line-height: 34px;
+  color: #fFFFFF;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 24px;
+  border-bottom: none;
+}
+
+fieldset legend {
+  font-size: 24px;
+  line-height: 34px;
+  color: #253B51;
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E6E6F0;
+  margin-bottom: 31px;
+}
+
+fieldset .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+fieldset .input-wrapper label, fieldset .checkbox-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+}
+
+fieldset .input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+  margin-left: 9px;
+}
+
+::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: #C1BCCC;
+}
+
+fieldset .input-wrapper input, fieldset .input-wrapper select {
+  height: 55px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  background: #FAFAFC;
+  padding: 0 8px;
+}
+
+.nomecompleto {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 16px;
+}
+
+.nomecompleto div {
+  width: 100%;
+}
+
+fieldset .input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+fieldset .input-wrapper textarea {
+  height: 166px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  background: #FAFAFC;
+  padding: 14px 8px;
+}
+
+.divisoria {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+fieldset .checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+fieldset .checkbox-wrapper label {
+  margin-left: 32px;
+}
+
+fieldset .checkbox-wrapper input {
+  appearance: none;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+fieldset .checkbox-wrapper input:checked {
+  background: #F67669;
+}
+
+.datahora {
+  display: flex;
+}
+
+.datahora > :nth-child(1) {
+  width: 50%;
+  margin-right: 32px;
+}
+
+.datahora > :nth-child(2) {
+margin-right: 10px;
+}
+
+.datahora > :nth-last-child(-n+2) {
+  width: 25%;
+}
+
+button {
+  margin-top: 32px;
+  width: 622px;
+  height: 51px;
+  background: #F67669;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+button:hover {
+  background: #e46557;
+}
